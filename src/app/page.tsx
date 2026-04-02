@@ -2,11 +2,46 @@ import ScrollHero from "@/components/ScrollHero";
 import AnimatedSection from "@/components/AnimatedSection";
 
 const brands = [
-  { name: "Zeekr", letter: "Z" },
-  { name: "BYD", letter: "B" },
-  { name: "NIO", letter: "N" },
-  { name: "XPeng", letter: "X" },
-  { name: "Li Auto", letter: "L" },
+  {
+    name: "Zeekr",
+    logo: (
+      <svg viewBox="0 0 120 28" fill="currentColor" className="h-6 md:h-7">
+        <text x="0" y="22" fontFamily="system-ui, sans-serif" fontWeight="800" fontSize="24" letterSpacing="3">ZEEKR</text>
+      </svg>
+    ),
+  },
+  {
+    name: "BYD",
+    logo: (
+      <svg viewBox="0 0 80 32" fill="currentColor" className="h-7 md:h-8">
+        <text x="0" y="26" fontFamily="system-ui, sans-serif" fontWeight="900" fontSize="30" letterSpacing="2">BYD</text>
+      </svg>
+    ),
+  },
+  {
+    name: "NIO",
+    logo: (
+      <svg viewBox="0 0 70 32" fill="currentColor" className="h-7 md:h-8">
+        <text x="0" y="26" fontFamily="system-ui, sans-serif" fontWeight="800" fontSize="28" letterSpacing="4">NIO</text>
+      </svg>
+    ),
+  },
+  {
+    name: "XPeng",
+    logo: (
+      <svg viewBox="0 0 110 28" fill="currentColor" className="h-6 md:h-7">
+        <text x="0" y="22" fontFamily="system-ui, sans-serif" fontWeight="800" fontSize="24" letterSpacing="2">XPENG</text>
+      </svg>
+    ),
+  },
+  {
+    name: "Li Auto",
+    logo: (
+      <svg viewBox="0 0 110 28" fill="currentColor" className="h-6 md:h-7">
+        <text x="0" y="22" fontFamily="system-ui, sans-serif" fontWeight="800" fontSize="24" letterSpacing="2">Li Auto</text>
+      </svg>
+    ),
+  },
 ];
 
 const cars = [
@@ -16,6 +51,9 @@ const cars = [
     range: "650 km",
     power: "544 KM",
     price: "od 189 000 PLN",
+    gradient: "from-[#1a237e] via-[#0d47a1] to-[#01579b]",
+    accent: "#42a5f5",
+    silhouette: "shooting-brake",
   },
   {
     name: "BYD Seal",
@@ -23,6 +61,9 @@ const cars = [
     range: "570 km",
     power: "530 KM",
     price: "od 159 000 PLN",
+    gradient: "from-[#1b5e20] via-[#2e7d32] to-[#1a237e]",
+    accent: "#66bb6a",
+    silhouette: "sedan",
   },
   {
     name: "NIO ET5",
@@ -30,6 +71,9 @@ const cars = [
     range: "580 km",
     power: "489 KM",
     price: "od 175 000 PLN",
+    gradient: "from-[#4a148c] via-[#311b92] to-[#1a237e]",
+    accent: "#ab47bc",
+    silhouette: "sedan",
   },
   {
     name: "XPeng G6",
@@ -37,8 +81,97 @@ const cars = [
     range: "570 km",
     power: "476 KM",
     price: "od 169 000 PLN",
+    gradient: "from-[#bf360c] via-[#e65100] to-[#f57f17]",
+    accent: "#ff7043",
+    silhouette: "suv",
   },
 ];
+
+function CarSilhouette({ type, accent }: { type: string; accent: string }) {
+  if (type === "suv") {
+    return (
+      <svg viewBox="0 0 240 100" fill="none" className="w-full h-auto drop-shadow-2xl" style={{ filter: `drop-shadow(0 8px 24px ${accent}30)` }}>
+        <path
+          d="M30 70 L45 70 L50 55 L70 35 L90 28 L160 28 L185 35 L195 50 L200 55 L210 70 L215 70"
+          stroke={accent}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          opacity="0.8"
+        />
+        <path
+          d="M30 70 L215 70"
+          stroke={accent}
+          strokeWidth="1.5"
+          opacity="0.4"
+        />
+        <circle cx="65" cy="72" r="10" stroke={accent} strokeWidth="2" fill="none" opacity="0.6" />
+        <circle cx="65" cy="72" r="5" stroke={accent} strokeWidth="1.5" fill="none" opacity="0.4" />
+        <circle cx="185" cy="72" r="10" stroke={accent} strokeWidth="2" fill="none" opacity="0.6" />
+        <circle cx="185" cy="72" r="5" stroke={accent} strokeWidth="1.5" fill="none" opacity="0.4" />
+        <line x1="90" y1="28" x2="90" y2="55" stroke={accent} strokeWidth="1" opacity="0.3" />
+        <line x1="160" y1="28" x2="165" y2="50" stroke={accent} strokeWidth="1" opacity="0.3" />
+        <path d="M95 32 L155 32 L155 50 L93 50 Z" stroke={accent} strokeWidth="1" fill={accent} fillOpacity="0.05" opacity="0.5" />
+      </svg>
+    );
+  }
+  if (type === "shooting-brake") {
+    return (
+      <svg viewBox="0 0 240 100" fill="none" className="w-full h-auto drop-shadow-2xl" style={{ filter: `drop-shadow(0 8px 24px ${accent}30)` }}>
+        <path
+          d="M25 72 L40 72 L48 55 L75 30 L100 25 L175 25 L195 40 L205 60 L210 72 L220 72"
+          stroke={accent}
+          strokeWidth="2.5"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          fill="none"
+          opacity="0.8"
+        />
+        <path
+          d="M25 72 L220 72"
+          stroke={accent}
+          strokeWidth="1.5"
+          opacity="0.4"
+        />
+        <circle cx="60" cy="74" r="10" stroke={accent} strokeWidth="2" fill="none" opacity="0.6" />
+        <circle cx="60" cy="74" r="5" stroke={accent} strokeWidth="1.5" fill="none" opacity="0.4" />
+        <circle cx="190" cy="74" r="10" stroke={accent} strokeWidth="2" fill="none" opacity="0.6" />
+        <circle cx="190" cy="74" r="5" stroke={accent} strokeWidth="1.5" fill="none" opacity="0.4" />
+        <line x1="100" y1="25" x2="100" y2="55" stroke={accent} strokeWidth="1" opacity="0.3" />
+        <line x1="175" y1="25" x2="180" y2="55" stroke={accent} strokeWidth="1" opacity="0.3" />
+        <path d="M105 29 L170 29 L175 52 L102 52 Z" stroke={accent} strokeWidth="1" fill={accent} fillOpacity="0.05" opacity="0.5" />
+      </svg>
+    );
+  }
+  // sedan
+  return (
+    <svg viewBox="0 0 240 100" fill="none" className="w-full h-auto drop-shadow-2xl" style={{ filter: `drop-shadow(0 8px 24px ${accent}30)` }}>
+      <path
+        d="M25 72 L40 72 L48 58 L80 32 L105 26 L165 26 L185 38 L200 58 L210 72 L220 72"
+        stroke={accent}
+        strokeWidth="2.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        fill="none"
+        opacity="0.8"
+      />
+      <path
+        d="M25 72 L220 72"
+        stroke={accent}
+        strokeWidth="1.5"
+        opacity="0.4"
+      />
+      <circle cx="60" cy="74" r="10" stroke={accent} strokeWidth="2" fill="none" opacity="0.6" />
+      <circle cx="60" cy="74" r="5" stroke={accent} strokeWidth="1.5" fill="none" opacity="0.4" />
+      <circle cx="192" cy="74" r="10" stroke={accent} strokeWidth="2" fill="none" opacity="0.6" />
+      <circle cx="192" cy="74" r="5" stroke={accent} strokeWidth="1.5" fill="none" opacity="0.4" />
+      <line x1="105" y1="26" x2="105" y2="55" stroke={accent} strokeWidth="1" opacity="0.3" />
+      <line x1="165" y1="26" x2="170" y2="52" stroke={accent} strokeWidth="1" opacity="0.3" />
+      <path d="M110 30 L160 30 L166 50 L107 50 Z" stroke={accent} strokeWidth="1" fill={accent} fillOpacity="0.05" opacity="0.5" />
+    </svg>
+  );
+}
 
 const valueProps = [
   {
@@ -145,14 +278,11 @@ export default function Home() {
           <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
             {brands.map((brand, i) => (
               <AnimatedSection key={brand.name} delay={i * 0.1}>
-                <div className="flex items-center justify-center w-24 h-24 md:w-32 md:h-32 rounded-2xl bg-white/5 border border-white/10 hover:border-electric-blue/50 hover:bg-electric-blue/5 transition-all duration-300 group">
-                  <span className="text-2xl md:text-3xl font-bold text-white/50 group-hover:text-electric-blue transition-colors">
-                    {brand.letter}
-                  </span>
+                <div className="flex items-center justify-center px-6 py-4 md:px-8 md:py-5 rounded-2xl bg-white/5 border border-white/10 hover:border-electric-blue/50 hover:bg-electric-blue/5 transition-all duration-300 group">
+                  <div className="text-white/40 group-hover:text-electric-blue transition-colors duration-300">
+                    {brand.logo}
+                  </div>
                 </div>
-                <p className="text-center text-white/40 text-sm mt-3">
-                  {brand.name}
-                </p>
               </AnimatedSection>
             ))}
           </div>
@@ -177,24 +307,24 @@ export default function Home() {
             {cars.map((car, i) => (
               <AnimatedSection key={car.name} delay={i * 0.1}>
                 <div className="group rounded-2xl bg-charcoal border border-white/10 overflow-hidden hover:border-electric-blue/30 transition-all duration-300 hover:-translate-y-1">
-                  {/* Car image placeholder */}
-                  <div className="aspect-[4/3] bg-gradient-to-br from-[#0d1b3e] to-charcoal flex items-center justify-center relative overflow-hidden">
-                    <div className="absolute inset-0 bg-electric-blue/5 group-hover:bg-electric-blue/10 transition-colors" />
-                    <svg
-                      width="80"
-                      height="80"
-                      viewBox="0 0 24 24"
-                      fill="none"
-                      className="text-white/10 group-hover:text-electric-blue/20 transition-colors"
-                    >
-                      <path
-                        d="M7 17h.01M17 17h.01M3 13l1.5-5A2 2 0 016.43 6.5h11.14a2 2 0 011.93 1.5L21 13M3 13h18M3 13v4a1 1 0 001 1h1a1 1 0 001-1v-1h12v1a1 1 0 001 1h1a1 1 0 001-1v-4"
-                        stroke="currentColor"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
+                  {/* Car showcase area with gradient + silhouette */}
+                  <div className={`aspect-[4/3] bg-gradient-to-br ${car.gradient} flex flex-col items-center justify-center relative overflow-hidden p-6`}>
+                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-500" />
+                    {/* Decorative grid lines */}
+                    <div className="absolute inset-0 opacity-[0.03]" style={{
+                      backgroundImage: `linear-gradient(${car.accent}40 1px, transparent 1px), linear-gradient(90deg, ${car.accent}40 1px, transparent 1px)`,
+                      backgroundSize: '30px 30px',
+                    }} />
+                    {/* Glow orb */}
+                    <div className="absolute top-0 right-0 w-32 h-32 rounded-full blur-[60px] opacity-30 group-hover:opacity-50 transition-opacity duration-500" style={{ backgroundColor: car.accent }} />
+                    {/* Silhouette */}
+                    <div className="relative z-10 w-full px-2 mt-4 group-hover:scale-105 transition-transform duration-500">
+                      <CarSilhouette type={car.silhouette} accent={car.accent} />
+                    </div>
+                    {/* Model name overlay */}
+                    <p className="relative z-10 text-[10px] tracking-[0.25em] uppercase mt-3 font-medium" style={{ color: `${car.accent}99` }}>
+                      {car.type}
+                    </p>
                   </div>
 
                   <div className="p-5">
