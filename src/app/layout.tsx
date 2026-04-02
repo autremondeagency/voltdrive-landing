@@ -8,11 +8,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "VoltDrive — Elektryczna przyszlosc. Juz dzis.",
+  title: "VoltDrive — Elektryczna przyszłość. Już dziś.",
   description:
-    "Premium samochody elektryczne z Chin. Zeekr, BYD, NIO, XPeng. Bezposredni import, pelna gwarancja, konkurencyjne ceny.",
+    "Premium samochody elektryczne z Chin. Zeekr, BYD, NIO, XPeng. Bezpośredni import, pełna gwarancja, konkurencyjne ceny.",
   openGraph: {
-    title: "VoltDrive — Elektryczna przyszlosc. Juz dzis.",
+    title: "VoltDrive — Elektryczna przyszłość. Już dziś.",
     description:
       "Premium samochody elektryczne z Chin. Zeekr, BYD, NIO, XPeng.",
     url: "https://autremondeagency.github.io/voltdrive-landing/",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "VoltDrive — Elektryczna przyszlosc. Juz dzis.",
+    title: "VoltDrive — Elektryczna przyszłość. Już dziś.",
     description:
       "Premium samochody elektryczne z Chin. Zeekr, BYD, NIO, XPeng.",
   },

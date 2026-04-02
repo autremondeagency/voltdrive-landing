@@ -230,10 +230,10 @@ export default function ScrollHero() {
             ref={titleRef}
             className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight text-white max-w-5xl leading-[1.05]"
           >
-            Elektryczna przyszlosc.
+            Elektryczna przyszłość.
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-electric-blue to-[#00b4d8]">
-              Juz dzis.
+              Już dziś.
             </span>
           </h1>
 
@@ -241,7 +241,7 @@ export default function ScrollHero() {
             ref={subtitleRef}
             className="mt-6 text-lg sm:text-xl md:text-2xl text-white/70 max-w-2xl"
           >
-            Premium chinskie samochody elektryczne. Importowane do Polski.
+            Premium chińskie samochody elektryczne. Importowane do Polski.
           </p>
 
           <div className="mt-10 flex flex-col sm:flex-row gap-4">
@@ -255,14 +255,14 @@ export default function ScrollHero() {
               href="#contact"
               className="px-8 py-4 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors text-lg backdrop-blur-sm"
             >
-              Skontaktuj sie
+              Skontaktuj się
             </a>
           </div>
 
           {/* Scroll indicator */}
           <div className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
             <span className="text-sm tracking-wider uppercase">
-              Przewin w dol
+              Przewiń w dół
             </span>
             <svg
               width="24"

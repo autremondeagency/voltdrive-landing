@@ -101,9 +101,9 @@ const valueProps = [
         />
       </svg>
     ),
-    title: "Bezposredni import",
+    title: "Bezpośredni import",
     description:
-      "Importujemy bezposrednio od producenta. Bez posrednikow, bez ukrytych kosztow.",
+      "Importujemy bezpośrednio od producenta. Bez pośredników, bez ukrytych kosztów.",
   },
   {
     icon: (
@@ -117,9 +117,9 @@ const valueProps = [
         />
       </svg>
     ),
-    title: "Pelna gwarancja",
+    title: "Pełna gwarancja",
     description:
-      "Kazdy samochod objety pelna gwarancja i wsparciem serwisowym w Polsce.",
+      "Każdy samochód objęty pełną gwarancją i wsparciem serwisowym w Polsce.",
   },
   {
     icon: (
@@ -135,7 +135,7 @@ const valueProps = [
     ),
     title: "Najnowsza technologia",
     description:
-      "Chinskie EV to liderzy innowacji. Najlepsze baterie, najlepsze oprogramowanie.",
+      "Chińskie EV to liderzy innowacji. Najlepsze baterie, najlepsze oprogramowanie.",
   },
   {
     icon: (
@@ -151,28 +151,28 @@ const valueProps = [
     ),
     title: "Konkurencyjne ceny",
     description:
-      "Do 30% taniej niz europejskie odpowiedniki. Premium nie musi kosztowac fortuny.",
+      "Do 30% taniej niż europejskie odpowiedniki. Premium nie musi kosztować fortuny.",
   },
 ];
 
 const steps = [
   {
     number: "01",
-    title: "Wybierz samochod",
+    title: "Wybierz samochód",
     description:
-      "Przegladaj nasz katalog lub powiedz nam, czego szukasz. Doradzimy najlepsza opcje.",
+      "Przeglądaj nasz katalog lub powiedz nam, czego szukasz. Doradzimy najlepszą opcję.",
   },
   {
     number: "02",
-    title: "Zloz zamowienie",
+    title: "Złóż zamówienie",
     description:
-      "Podpisujesz umowe, wplacasz zaliczke. My zajmujemy sie importem i homologacja.",
+      "Podpisujesz umowę, wpłacasz zaliczkę. My zajmujemy się importem i homologacją.",
   },
   {
     number: "03",
     title: "Odbierz kluczyki",
     description:
-      "Samochod dostarczony pod Twoje drzwi, zarejestrowany i gotowy do jazdy.",
+      "Samochód dostarczony pod Twoje drzwi, zarejestrowany i gotowy do jazdy.",
   },
 ];
 
@@ -213,7 +213,7 @@ export default function Home() {
                 Nasza oferta
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                Wyrozniajace sie modele
+                Wyróżniające się modele
               </h2>
             </div>
           </AnimatedSection>
@@ -284,7 +284,7 @@ export default function Home() {
                         {car.price}
                       </span>
                       <button className="text-sm text-white/50 hover:text-electric-blue transition-colors">
-                        Szczegoly &rarr;
+                        Szczegóły &rarr;
                       </button>
                     </div>
                   </div>
@@ -304,7 +304,7 @@ export default function Home() {
                 Dlaczego my
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                Twoj zaufany partner
+                Twój zaufany partner
               </h2>
             </div>
           </AnimatedSection>
@@ -338,7 +338,7 @@ export default function Home() {
                 Proces
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-white">
-                Jak to dziala
+                Jak to działa
               </h2>
             </div>
           </AnimatedSection>
@@ -379,12 +379,12 @@ export default function Home() {
           <AnimatedSection>
             <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">
               Gotowy na{" "}
-              <span className="text-electric-blue">elektryczna przyszlosc</span>
+              <span className="text-electric-blue">elektryczną przyszłość</span>
               ?
             </h2>
             <p className="text-xl text-white/60 mb-10 max-w-2xl mx-auto">
-              Umow sie na konsultacje. Pomozemy Ci wybrac idealny samochod
-              elektryczny i zajmiemy sie calym procesem importu.
+              Umów się na konsultację. Pomożemy Ci wybrać idealny samochód
+              elektryczny i zajmiemy się całym procesem importu.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
@@ -403,7 +403,7 @@ export default function Home() {
                 Napisz do nas
               </a>
               <a
-                href="tel:+48123456789"
+                href="tel:+48800700600"
                 className="px-10 py-5 border border-white/20 text-white font-semibold rounded-xl hover:bg-white/10 transition-colors text-lg inline-flex items-center justify-center gap-2"
               >
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
@@ -415,7 +415,7 @@ export default function Home() {
                     strokeLinejoin="round"
                   />
                 </svg>
-                Zadzwon
+                Zadzwoń
               </a>
             </div>
           </AnimatedSection>
@@ -457,13 +457,13 @@ export default function Home() {
               >
                 Kontakt
               </a>
-              <span>Polityka prywatnosci</span>
+              <span>Polityka prywatności</span>
             </nav>
 
             <div className="text-sm text-white/30">
-              <p>&copy; 2026 VoltDrive. Wszystkie prawa zastrzezone.</p>
+              <p>&copy; 2026 VoltDrive. Wszystkie prawa zastrzeżone.</p>
               <p className="mt-1 text-[10px] text-white/20">
-                Zdjecia: Wikimedia Commons (CC BY / CC BY-SA)
+                Zdjęcia: Wikimedia Commons (CC BY / CC BY-SA)
               </p>
             </div>
           </div>
